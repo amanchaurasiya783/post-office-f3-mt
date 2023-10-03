@@ -67,7 +67,7 @@ async function addDataOnDisplayLocationPage(locationData) {
         document.getElementById('city').innerHTML = locationData.city;
         document.getElementById('region').innerHTML = locationData.region;
         document.getElementById('organisation').innerHTML = locationData.org;
-        document.getElementById('hostname').innerHTML = locationData.latitude;
+        document.getElementById('hostname').innerHTML = locationData.ip;
         document.getElementById('timeZone').innerHTML = locationData.timezone;
 
         let datetime = new Date().toLocaleString("en-US", { timeZone: `${locationData.timezone}` });
